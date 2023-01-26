@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="d-flex flex-column col-6 pe-5">
+    <div class="d-flex flex-row justify-content-center">
+        <h1 class="display-6 fw-bold">{{ current_user.first_name }}</h1>
+    </div>
+    <div class="d-flex flex-row pb-5 pt-5 justify-content-center">
+        <p class="subtext">
+            {% if current_user.is_authenticated %}
+            <ul class="list-group">
+                <li class="list-group-item bg-light"><span class="fw-bold">Email:</span> {{ current_user.email }}</li>
+                <li class="list-group-item bg-light"><span class="fw-bold">Token:</span> {{ current_user.token }}</li>
+            </ul>
+            {% else %}
+            <h2 class="display-4 text-center">Please sign in to view your account.</h2>
+            {% endif %}
+        </p>
+    </div>
+</div>
+<div class="col-4 ps-5">
+    <img src="../static/images/undraw_book_lover_re_rwjy.svg" alt="" class="img-fluid">
+</div>
+
+{% endblock %}

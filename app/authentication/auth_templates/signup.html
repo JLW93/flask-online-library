@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="d-flex flex-column col-6 pe-5">
+    <div class="d-flex flex-row justify-content-center">
+        <h1 class="display-6 fw-bold">Create an Account</h1>
+    </div>
+    {% include 'signupform.html' %}
+</div>
+<div class="col-4 ps-5">
+    <img src="../static/images/undraw_book_lover_re_rwjy.svg" alt="" class="img-fluid">
+</div>
+
+{% endblock %}

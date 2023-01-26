@@ -1,0 +1,62 @@
+/* * {
+    border: 1px solid red;
+} */
+
+body {
+    /* color: #564138; */
+    color: #4A3830;
+    background-color: #F6E0CB;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+i {
+    color: #FF9500;
+}
+
+.subtext {
+    color: #7B5D51;
+}
+
+/* Bootstrap edits */
+
+.bg-light {
+    background-color: #F6E0CB !important;
+}
+
+.btn-primary {
+    background-color: #FF9500;
+    border-color: #FF9500;
+}
+
+.btn-primary:hover {
+    background-color: #E08300;
+    border-color:#E08300;
+}
+
+.form-control:focus {
+    border-color: #FF9500;
+    box-shadow: 0 0 0 0.2rem rgba(255, 149, 0, 0.25);
+}
+
+.btn:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 149, 0, 0.25);
+    background-color: #E08300;
+    border-color: #E08300;
+}
+
+/* .btn:active {
+    box-shadow: 0 0 0 0.2rem rgba(255, 149, 0, 0.25);
+    background-color: #E08300;
+    border-color: #E08300;
+} */
+
+.my-button:not(:disabled):not(:disabled):active {
+    box-shadow: 0 0 0 0.2rem rgba(255, 149, 0, 0.25);
+    background-color: #E08300;
+    border-color: #E08300;
+}
+
+.border-primary {
+    border-color: #4A3830 !important;
+}

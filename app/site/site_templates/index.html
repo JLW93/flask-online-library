@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="d-flex flex-column col-6 pe-5">
+    <div class="d-flex flex-row">
+        <h1 class="display-4 fw-bold text-nowrap">Online Library</h1>
+    </div>
+    <div class="d-flex flex-row">
+        <p class="subtext">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Incidunt aliquid, commodi ullam molestiae culpa iure temporibus, 
+            vero quasi a amet optio, sunt veritatis perspiciatis maiores. 
+            Incidunt atque consequuntur delectus blanditiis!
+        </p>
+    </div>
+    <div class="d-flex flex-column col-auto">
+        <div class="input-group mb-3 d-flex flex-row col-auto">
+            <input type="text" class="form-control rounded-start border-0 col-auto" placeholder="Search for a book..." aria-label="Search for a book." aria-describedby="button1">
+            <button class="my-button btn btn-primary col-auto" id="button1">Search</button>
+        </div>
+    </div>
+</div>
+<div class="col-4 ps-5">
+    <img src="../static/images/undraw_book_lover_re_rwjy.svg" alt="" class="img-fluid">
+</div>
+
+{% endblock %}
